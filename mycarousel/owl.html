@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="owl.carousel.css"/>
+<link rel="stylesheet" href="../WOW-master/css/libs/animate.css"/>
+
+</head>
+
+<body>
+<style>
+.auto{max-width:800px;
+background: #ffffff;
+margin:20px auto;	
+height:1500px;
+}
+.header{
+	width:800px;
+	height:50px;
+	background:#FCE8E8;
+}
+.logo{
+	width:100px;
+	height:50px;
+	background:#001C34;
+	float:left;
+	display:inline-block;}
+	.aone{
+	color:#FFFFFF;
+	text-align: center;
+	display:inline-block;
+	margin-left:25px;
+	margin-top:15px;
+	font-family:chelsea-market;
+	text-decoration:none;
+	
+}
+.side{
+	float:left;
+	background:#ff685d;
+	width:700px;
+	height:50px;}
+	.side a{
+		color:#FFFFFF;
+		margin-left:70px;
+		margin-top:14px;
+		text-align:center;
+		font-family:chelsea-market;
+		display:inline-block;
+		text-decoration:none;
+		font-size:16px;
+	}
+	.owl-nav{
+text-align:center;
+font-size:36px;	
+color:#000000;
+}.form{
+	width:800px;
+	height:430px;
+	background:#DBDBDB;
+	padding:20px;
+	
+	}
+	#heading{
+		text-align:center;
+	
+		padding:15px;
+		font-size:29px;	}
+		.butt{
+		background:#2017F4;
+		color:#FFFFFF;}
+		.ho{text-align:center;
+		margin:7px;
+		padding:15px;
+		font-size:29px;
+		}
+		table tr *{
+text-align:center;
+	padding:10px;
+}.align{
+width:50%;
+float:left;
+}
+
+</style>
+    
+<div class="auto">
+  <header class="header">
+    <div class="logo"> 
+    <a href="#" class="aone">LOGO</a>
+    </div>
+    <div class="side"> <a href=""#>Introduction</a> <a href="#">My Hobbies</a> <a href="#">Education</a> <a href="#">Contact us</a> </div>
+</header>
+  <div class="slider wow lightSpeedIn">
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="../slide1.jpeg" width="100%"alt=""></div>
+      <div class="item"><img src="../slide2.jpeg" width="100%"alt=""></div>
+      <div class="item"><img src="../slide1.jpeg" width="100%"alt=""></div>
+      <div class="item"><img src="../slide2.jpeg" width="100%"alt=""></div>
+    </div>
+  </div>
+  <div class="form wow swing" data-wow-duration="1.2s" data-wow-delay="1s">
+    <h2 id="heading"><strong>My Form</strong></h2>
+    <form action="">
+      <div class="align">
+        <label>First Name</label>
+        <br>
+        <input type="text"  placeholder="fname">
+      </div>
+      <div class="align">
+        <label>Last Name</label>
+        <br>
+        <input type="text" placeholder="Lname">
+      </div>
+      <div class="align">
+        <label>Email</label>
+        <br>
+        <input type="text" placeholder="Email">
+      </div>
+      <br>
+      <div class="a">
+        <label>Gender</label>
+        <br>
+        <select class="ab">
+          <option value="gender">Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="transgender">Transgender</option>
+        </select>
+      </div>
+      <br>
+      <div class="align">
+        <label>Message</label>
+        <br>
+        <textarea width="100%">Enter your message here</textarea>
+        <br>
+        <button type="button" class="butt">Submit</button>
+        <br>
+      </div>
+    </form>
+  </div>
+  <div class="table wow bounceIn" data-wow-duration="1.2s" data-wow-delay="1s"> 
+    <h4 class="ho">My Table</h4>
+    <table border="1" cellpadding="1" width="100%">
+      <thead>
+        <tr>
+          <td><strong>StudentID</strong></td>
+          <td><strong>FirstName</strong></td>
+          <td><strong>LastName</strong></td>
+          <td><Strong>Branch</Strong></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ROO1</td>
+          <td>John</td>
+          <td>Doe</td>
+          <td>Mechanical</td>
+        </tr>
+        <tr>
+          <td>ROO2</td>
+          <td>Marry</td>
+          <td>Moe</td>
+          <td>Electronics</td>
+        </tr>
+        <tr>
+          <td>ROO3</td>
+          <td>July</td>
+          <td>Dolly</td>
+          <td>IT</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script type="text/javascript" src="owl.carousel.min.js"></script> 
+<script type="text/javascript" src="../WOW-master/dist/wow.min.js"></script>
+
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+$(function(){
+	wow=new WOW();
+	wow.init();
+});
+
+</script>
+</body>
+</html>
